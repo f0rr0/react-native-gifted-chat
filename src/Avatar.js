@@ -24,12 +24,11 @@ export default class Avatar extends React.Component {
   render() {
     if (this.props.isSameUser(this.props.currentMessage, this.props.nextMessage) && this.props.isSameDay(this.props.currentMessage, this.props.nextMessage)) {
       return (
-        // <View style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
-        //   <GiftedAvatar
-        //     avatarStyle={StyleSheet.flatten([styles[this.props.position].image, this.props.imageStyle[this.props.position]])}
-        //   />
-        // </View>
-        null
+        <View style={[styles[this.props.position].container, this.props.containerStyle[this.props.position]]}>
+          {/* <GiftedAvatar
+            avatarStyle={StyleSheet.flatten([styles[this.props.position].image, this.props.imageStyle[this.props.position]])}
+          /> */}
+        </View>
       );
     }
     return (
